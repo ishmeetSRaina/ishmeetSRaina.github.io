@@ -1,4 +1,7 @@
-
+---
+layout: default
+title: Simple Neural Network
+---
 # Simple Neural Network
 * This notebook shows how to create a simple neural network in tensorflow for handwritten digit classification on the classic MNIST database.
 * The accuracy of model after around 5000 iterations on the data set is about 93%.
