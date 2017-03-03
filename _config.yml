@@ -85,3 +85,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+# summary of every post  is before this
+excerpt_separator: <!--more-->

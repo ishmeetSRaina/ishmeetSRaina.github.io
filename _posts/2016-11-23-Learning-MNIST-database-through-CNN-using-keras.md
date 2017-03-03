@@ -1,7 +1,13 @@
 ---
-layout: default
-title: learning MNIST database through CNN using Keras
+layout: post
+title: Learning MNIST database through CNN using Keras
+categories: [ComputerVision]
+author: ISR
 ---
+
+Create a Convolutional Neural Network using Keras to learn MNIST database. The CNN provides an accuracy of around 99% on th MNIST database. Keras is a python library for deep learning.
+<!--more-->
+
 
 ```python
 import tensorflow as tf
