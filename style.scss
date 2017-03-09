@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $helveticaNeue;
   color: $darkGray;
   
 }
@@ -27,38 +27,33 @@ body {
 .container {
   margin: 0 auto;
   max-width: 800px;
-  padding: 0 0px;
+  padding: 0 30px;
   width: 100%;
 }
 
 div{
   
-  .post-meta {
-    font-size: 12px; 
-    font-family: $helveticaNeue;
-    color: #black;
+  .postMeta {
+    display: block;
+    font-size: 15px;
+    color: #818181;
+  }
+
+  .summary{
+  font-size: 18px;
+  color: $darkerGray;
+  line-height:1;
+
+
   }
   
   
 
 }
-span {
-  .small
-  {
-  text-transform: lowercase;
-  }
-  .midsize
-  {
-  text-transform: capitalize;
-  font-weight: bold;
-  font-size: 15px;
-  color: $gray;
-  }
-}
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
+  color: $blue;
+  
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -88,19 +83,26 @@ h4 {
   font-size: 18px;
   color: $gray;
 }
+h6 {
+  font-size: 18px;
+  color: $blue;
+}
 
 p {
   margin: 15px 0;
 }
 
-a {
-  color: $darkerGray;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
+
+a       { color: #2a7ae2; text-decoration: none; }
+a:hover   { color: #000; text-decoration: underline; }
+a:visited { color: #205caa; }
+a.postLink { 
+font-size: 20px;
+font-family: $helveticaNeue;
+    letter-spacing: -1px;
+    line-height: 1;
 }
+
 
 ul, ol {
   margin: 15px 0;
@@ -250,14 +252,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $blue;
+    color: #FF0000;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: #FF0000;
     }
   }
 }
@@ -267,8 +269,8 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  padding-bottom: 1em;
+  
 }
 
 .posts > .post:last-child {
@@ -290,10 +292,7 @@ nav {
     margin-top: 10px;
   }
 
-  .read-more {
-    text-transform: uppercase;
-    font-size: 10px;
-  }
+  
 }
 
 .wrapper-footer {

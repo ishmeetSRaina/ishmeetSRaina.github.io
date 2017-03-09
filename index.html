@@ -6,31 +6,20 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
     	
+       <div class="postMeta">
+         <span >{{ post.date | date: "%b %d %Y"}}</span>
+         <span >, {{ post.categories }}</span>
+
+        </div>
 
 
-      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+      <a class= "postLink" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 
       <div class="summary">
       	
         {{ post.excerpt }}
 
       </div>
-
-       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">...Read More</a>
-
-	  <div class="post-meta">
-        <span class = "small">by</span>
-        <span class = "midsize">{{ post.author }}</span>
-        <span class = "small"> on</span>
-        <span class = "midsize">{{ post.date | date: "%B %d %Y"}}</span>
-        <span class = "small">in</span>
-        <span class = "midsize">{{ post.categories }}</span>
-
-      	</div>
-
-
-     
-  
-    </article>
+      </article>
   {% endfor %}
 </div>
